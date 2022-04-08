@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "./api/server.js",
   "scripts": {
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit",
     "prestart": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
     "start": "nodemon ."
   },
