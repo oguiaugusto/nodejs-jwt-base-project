@@ -2,8 +2,8 @@ const chai = require('chai');
 const chaiHttp = require('chai-http');
 const { stub } = require('sinon');
 
-const server = require('../api/app');
-const { User } = require('../models');
+const server = require('../src/api/app');
+const { User } = require('../src/models');
 const { User: userMock } = require('./mocks/models');
 
 const { expect } = chai;
